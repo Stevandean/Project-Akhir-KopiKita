@@ -1,14 +1,14 @@
 import React from 'react';
 
-const Topmenu = () => {
+const Minuman = () => {
   return (
-    <div name='topmenu' className='w-full text-white my-24'>
+    <div name='minuman' className='w-full text-white my-24'>
       <div className='w-full h-[800px] bg-slate-900 absolute mix-blend-overlay'></div>
 
       <div className='max-w-[1240px] mx-auto py-12'>
 
         <div className='text-center py-8 text-slate-300'>
-          <h2 className='text-5xl font-bold text-white uppercase'>Top Menu</h2>
+          <h2 className='text-5xl font-bold text-white uppercase'>Minuman</h2>
           <h3 className='text-3xl py-8 text-white'>The best taste for you.</h3>
           <p className='text-3xl'> </p>
         </div>
@@ -60,4 +60,4 @@ const Topmenu = () => {
   );
 };
 
-export default Topmenu;
+export default Minuman;

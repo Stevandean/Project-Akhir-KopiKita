@@ -1,12 +1,13 @@
 import React, {useState} from 'react';
-import { Link, animateScroll as scroll, } from 'react-scroll'
+import { Link, } from 'react-scroll'
 
-
-import { MenuIcon, XIcon } from '@heroicons/react/outline';
+// ERROR (TABRAKAN DENGAN REACT SCROLL)
+// import { Route, Routes } from 'react-router-dom';
+// import Makanan from '../pages/makanan';
+// import Minuman from '../pages/minuman';
 
 const Navbar = () => {
     const [nav, setNav] = useState(false)
-    const handleClick = () => setNav(!nav)
 
     const handleClose =()=> setNav(!nav)
 
@@ -20,24 +21,35 @@ const Navbar = () => {
             <li><Link to="about" smooth={true} offset={-200} duration={500}>About</Link></li>
             <li><Link to="promo" smooth={true} offset={-50} duration={500}>Promo</Link></li>
             <li><Link to="topmenu" smooth={true} offset={-50} duration={500}>Top Menu</Link></li>
+            <li><Link to="makanan" smooth={true} offset={-50} duration={500}>Makanan</Link></li>
+            <li><Link to="minuman" smooth={true} offset={-50} duration={500}>Minuman</Link></li>
 
-            <h1 className='text-3xl font-bold ml-80 mr-10 sm:text-4xl'></h1>
-            <h1 className='text-3xl font-bold ml-40 mr-10 sm:text-4xl'></h1>
-            <h1 className='text-2xl ml-80 my-3  sm:text-2xl '>Keranjang</h1>
+
+            {/* <Link className='navbar-list mt-4 ml-4' to="/makanan">Makanan</Link>
+            <Link className='navbar-list mt-4 ml-8' to="/minuman">Minuman</Link> */}
+
+            <h1 className='text-3xl font-bold ml-80 '></h1>
+            <h1 className='text-2xl ml-80 my-3 '>Keranjang</h1>
 
           </ul>
         </div>
-        <div className='md:hidden mr-4' onClick={handleClick}>
-            {!nav ? <MenuIcon className='w-5' /> : <XIcon className='w-5' />}
-          
-        </div>
       </div>
+
+        {/* Error Blank Putih */}
+      {/* <Routes>
+        <Route exact path="/" component={Hero} /> 
+        <Route path="/makanan" component={Hero<Makanan />}></Route>
+        <Route path="/minuman" component={Hero<Minuman />}></Route>
+      </Routes> */}
+
 
       <ul className={!nav ? 'hidden' : 'absolute bg-zinc-200 w-full px-8'}>
           <li className='border-b-2 border-zinc-300 w-full'><Link onClick={handleClose} to="home" smooth={true} duration={500}>Home</Link></li>
           <li className='border-b-2 border-zinc-300 w-full'><Link onClick={handleClose} to="about" smooth={true} offset={-200} duration={500}>About</Link></li>
           <li className='border-b-2 border-zinc-300 w-full'><Link onClick={handleClose} to="support" smooth={true} offset={-50} duration={500}>Support</Link></li>
           <li className='border-b-2 border-zinc-300 w-full'><Link onClick={handleClose} to="topmenu" smooth={true} offset={-50} duration={500}>topmenu</Link></li>
+          <li className='border-b-2 border-zinc-300 w-full'><Link onClick={handleClose} to="makanan" smooth={true} offset={-50} duration={500}>Makanan</Link></li>
+          <li className='border-b-2 border-zinc-300 w-full'><Link onClick={handleClose} to="minuman" smooth={true} offset={-50} duration={500}>Minuman</Link></li>
           <li className='border-b-2 border-zinc-300 w-full'><Link onClick={handleClose} to="pricing" smooth={true} offset={-50} duration={500}>Keranjang</Link></li>
 
       </ul>
