@@ -6,7 +6,7 @@ const About = () => {
         <div className='max-w-[1240px] mx-auto'>
             <div className='text-center'>
                 <h2 className='text-5xl font-bold'>KopiKita</h2>
-                <p className='text-3xl py-6 text-gray-500'>Kopi Kita adalah salah satu Coffee Shop yang sudah berdiri sejak 2022</p>
+                <p className='text-3xl py-6 text-gray-500'>Kopi Kita adalah salah satu Coffee Shop yang berdiri sejak 2022 di daerah Malang</p>
             </div>
 
             <div className='grid md:grid-cols-3 gap-1 px-2 text-center'>
