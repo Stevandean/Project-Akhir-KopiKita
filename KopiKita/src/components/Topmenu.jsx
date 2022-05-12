@@ -2,9 +2,9 @@ import React from 'react';
 
 import { CheckIcon } from '@heroicons/react/solid';
 
-const Pricing = () => {
+const Topmenu = () => {
   return (
-    <div name='pricing' className='w-full text-white my-24'>
+    <div name='topmenu' className='w-full text-white my-24'>
       <div className='w-full h-[800px] bg-slate-900 absolute mix-blend-overlay'></div>
 
       <div className='max-w-[1240px] mx-auto py-12'>
@@ -57,4 +57,4 @@ const Pricing = () => {
   );
 };
 
-export default Pricing;
+export default Topmenu;

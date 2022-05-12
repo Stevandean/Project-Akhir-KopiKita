@@ -3,11 +3,13 @@ import React from 'react';
 import { PhoneIcon, ArrowSmRightIcon } from '@heroicons/react/outline';
 import {ChipIcon, SupportIcon} from '@heroicons/react/solid'
 
+import {RiNumber1} from 'react-icons/ri'
+
 import bgImg from '../assets/bg.jpg'
 
-const Support = () => {
+const Promo = () => {
   return (
-  <div name='support' className='w-full mt-24'>
+  <div name='promo' className='w-full mt-24'>
       <div className='w-full h-[700px] bg-gray-900/90 absolute'>
         <img className='w-full h-full object-cover mix-blend-overlay' src={bgImg} alt="/" />
       </div>
@@ -22,7 +24,7 @@ const Support = () => {
           <div className='grid grid-cols-1 lg:grid-cols-3 relative gap-x-8 gap-y-16 px-4 pt-12 sm:pt-20 text-black'>
               <div className='bg-white rounded-xl shadow-2xl'>
                   <div className='p-8'>
-                      <PhoneIcon className='w-16 p-4 bg-indigo-600 text-white rounded-lg mt-[-4rem]' />
+                      <RiNumber1 className='w-16 bg-indigo-600 text-white rounded-lg mt-[-4rem]' />
                       <h3 className='font-bold text-2xl my-6'>Croissant</h3>
                       <p className='text-gray-600 text-xl'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi provident iure placeat blanditiis ea sint earum hic iste quibusdam exercitationem.</p>
                   </div>
@@ -56,4 +58,4 @@ const Support = () => {
   );
 };
 
-export default Support;
+export default Promo;
